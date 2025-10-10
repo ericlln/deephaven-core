@@ -199,6 +199,26 @@ public class Column {
         return isPartitionColumn;
     }
 
+    /**
+     * True if this column is a key column of an input table.
+     *
+     * @return true if the column is a key column of an input table
+     */
+    @JsProperty
+    public boolean getIsInputTableKeyColumn() {
+        return isInputTableKeyColumn;
+    }
+
+    /**
+     * True if this column is a value column of an input table.
+     *
+     * @return true if the column is a value column of an input table
+     */
+    @JsProperty
+    public boolean getIsInputTableValueColumn() {
+        return isInputTableValueColumn;
+    }
+
     public boolean isInputTableKeyColumn() {
         return isInputTableKeyColumn;
     }
